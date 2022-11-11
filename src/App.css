@@ -1,38 +1,114 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.cart-container{
+  padding: 1rem 4rem;
+}
+.cart-container h3{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-title{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  color: #102a42;
+  padding: 30px;
+  /* margin-bottom: 3.5rem; */
+}
+.cart-title h2{
+  letter-spacing: 3px;
+  font-size: 2.1rem;
+}
+.single-item-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.cart-items-container img{
+  width: 100px;
+  height: 100px;
+}
+.cart-price{
+  justify-content: flex-start;
+}
+.cart-price h4{
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #102a42;
+}
+.cart-price p{
+  color: #617d98;
+  font-weight: 600;
+}
+.cart-amount span{
+  color: #2680c0;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cart-amount{
+  font-size: 1.4rem;
+}
+.cancel{
+  color: red;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+hr{
+  font-size: 5rem;
+  line-height: 1.5;
+}
+.total-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.cart-container button{
+  margin-left: 33%;
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 2px solid #bb2525;
+  border-radius: 6px;
+  color: #bb2525;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.cart-container button:hover{
+  color: #bb2525;
+  background-color: #e66b6b;
+  border: 2px solid #e66b6b;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2680c0;
+  color: white;
+  padding: 15px 50px;
+}
+.nav-container {
+  display: block;
+  position: relative;
+}
+.nav-container svg {
+  width: 2rem;
+  fill: #fff;
+}
+.amount-container {
+  position: absolute;
+  top: -0.85rem;
+  right: -0.85rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  background: #85c6f4;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title h3{
+  font-size: 2rem;
+  letter-spacing: 4px;
 }
